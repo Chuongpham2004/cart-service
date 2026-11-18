@@ -21,10 +21,9 @@ variables:
 # Cache thư viện Gradle, chỉ làm mới khi file cấu hình build thay đổi
 .gradle_cache: &gradle_cache
   key:
-    files:
-      - build.gradle
-      - settings.gradle
-      - gradle/wrapper/gradle-wrapper.properties
+    files:                     # GitLab cho phép tối đa 2 file
+      - build.gradle           # đổi dependencies
+      - gradle/wrapper/gradle-wrapper.properties   # đổi phiên bản Gradle
   paths:
     - .gradle/wrapper
     - .gradle/caches
