@@ -180,6 +180,8 @@ docker run --rm --network cart-ci-net -v "$PWD:/home/gradle/project" -w /home/gr
 
 ## 9. Minh chứng pipeline chạy tự động
 
-Commit được push lên `main` → GitLab tự trigger pipeline → 3 stage `test → build → dockerize` thành công:
+Commit `872fe7a` được push lên `main` → GitLab **tự trigger** pipeline [#3082195807](https://gitlab.com/Chuongpham2004/cart-service/-/pipelines/3082195807) → 3 stage `test → build → dockerize` thành công (8/8 Integration Test pass, tổng thời gian ~3 phút):
 
 ![Pipeline 3 stage thành công](docs/pipeline-success.png)
+
+Kết quả: image **`chuongdocker2004/cart-service:872fe7a6`** được push lên [Docker Hub](https://hub.docker.com/r/chuongdocker2004/cart-service/tags). Tag trùng `$CI_COMMIT_SHORT_SHA`, không có tag `latest`.
