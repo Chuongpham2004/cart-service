@@ -5,6 +5,14 @@ Repo này chứa pipeline GitLab CI/CD chạy trọn vòng đời của service:
 
 > **Nguyên tắc bắt buộc:** không một dòng code nào được đóng gói thành Docker Image nếu chưa vượt qua Integration Test kết nối vào database thật.
 
+**Liên kết:**
+
+| | |
+|---|---|
+| Source code (GitHub) | https://github.com/Chuongpham2004/cart-service |
+| Pipeline (GitLab CI) | https://gitlab.com/Chuongpham2004/cart-service/-/pipelines |
+| Docker Image (Docker Hub) | https://hub.docker.com/r/chuongdocker2004/cart-service |
+
 ---
 
 ## 1. Kiến trúc pipeline
