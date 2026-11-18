@@ -1,0 +1,3 @@
+# Chỉ gửi file jar vào build context, loại bỏ mọi thứ khác
+*
+!build/libs/cart-service-1.0.0.jar

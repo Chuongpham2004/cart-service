@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: cart-service
+  # Giá trị mặc định cho môi trường local.
+  # Trên GitLab CI / server sẽ bị ghi đè bởi biến môi trường
+  # SPRING_DATASOURCE_URL, SPRING_DATASOURCE_USERNAME, SPRING_DATASOURCE_PASSWORD
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cart_db
+    username: cart_user
+    password: cart_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+server:
+  port: 8080
